@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Задача</title>
+    <title>Сокращение ссылок</title>
 
 </head>
 <body>

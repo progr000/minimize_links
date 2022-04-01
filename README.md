@@ -1,4 +1,5 @@
 _**Сокращение ссылок**_
+
 https://docs.google.com/document/d/1QzjTk5kfAzJLTyTXde3G0WdodsjHrCB1AL3gU-80qiQ/edit
 
 _Системные требования:_
