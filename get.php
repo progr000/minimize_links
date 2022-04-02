@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/incl/db.php';
+require_once __DIR__ . '/incl/Sql.php';
 
 if (!empty($_POST['source_link'])) {
     $db = new sql();
