@@ -56,12 +56,13 @@ class sql extends SQLite3
      * @param $str
      * @return string
      */
-    public function getHash($str)
+    private function getHash($str)
     {
         return hash('crc32b', $str);
     }
 
     /**
+     * Find or create Short link for original link
      * @param $original_link
      * @return array
      */
@@ -79,7 +80,6 @@ class sql extends SQLite3
             $sql->bindValue(':hash', $hash, SQLITE3_TEXT);
             $sql->bindValue(':original_link', $original_link, SQLITE3_TEXT);
             $ins = $sql->execute();
-            //var_dump($ins);exit;
 
             $result = compact('original_link', 'hash');
         }
