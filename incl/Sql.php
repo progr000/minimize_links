@@ -44,7 +44,7 @@ class Sql extends SqliteDB
      * @param $hash
      * @return array|bool
      */
-    public function getShortLink($hash)
+    public function getOriginalLink($hash)
     {
         $hash = SQLite3::escapeString($hash);
         $sql = $this->prepare("SELECT original_link FROM {$this->table} WHERE hash=:hash");
